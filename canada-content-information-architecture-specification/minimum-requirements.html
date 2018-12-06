@@ -8,8 +8,8 @@
                                 <meta content="width=device-width,initial-scale=1" name="viewport">
                                 <!-- Meta data-->
                                 <!-- Load closure template scripts -->
-                                <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_25/cdts/compiled/soyutils.js"></script>
-                                <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_25/cdts/compiled/wet-en.js"></script>
+                                <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/compiled/soyutils.js"></script>
+                                <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/compiled/wet-en.js"></script>
 
                                 <!-- Write closure template -->
                                 <script type="text/javascript">
@@ -309,139 +309,102 @@
 </div>
 
 <main role="main" property="mainContentOfPage" class="container">
-
-
-
-
-
+  <!-- <details>
+    <summary>Goals of this page</summary>
+    <ul>
+      <li>Describe what elements are required for a page to be Canada.ca</li>
+      <li>Describe in the overarching intention of these elements</li>
+      <li>Link to or provide the actual code behind each of the elements</li>
+    </ul>
+  </details> -->
 <h1 property="name" id="wb-cont" dir="ltr">Mandatory elements of the Canada.ca design system</h1>
 
+<div><div class="mwsgeneric-base-html parbase section">
+<p class="gc-byline"><b>From <a href="/en/treasury-board-secretariat.html">Treasury Board of Canada Secretariat</a></b></p>
 
+<p>Canada.ca pages must be easily readable by people with varying levels of visual acuity. It should also be possible to tell at a glace that a page is part of Canada.ca. It's important that each page convey the overall brand and feel of Canada.ca, whatever the content. These are achieved through a common header and footer, typography, and the use of colour and imagery. </p>
 
-
-
-
-
-
-
-    <div><div class="mwsgeneric-base-html parbase section">
-
-
-
-
-
-
-
-<p class="gc-byline"><strong>From <a href="/en/treasury-board-secretariat.html">Treasury Board of Canada Secretariat</a></strong></p>
-
-<nav role="navigation" class="mrgn-bttm-lg">
-
+<!-- <nav role="navigation" class="mrgn-bttm-lg">
 <h2 class="wb-inv">Document navigation</h2>
-
 <ul class="pager">
-
 <li class="previous"><a href="./usage-canadaca-design.html" rel="prev">Previous<span class="wb-inv">: Design system basics</span></a></li>
-
 <li class="toc"><a href="../canada-content-information-architecture-specification.html">Table of contents</a></li>
-
 <li class="next"><a href="./design-system.html" rel="next">Next<span class="wb-inv">: Templates and patterns</span></a></li>
-
 </ul>
+</nav> -->
 
-</nav>
 <section>
-
-<details>
-  <summary>Goals of this page</summary>
-  <p>(This for us to consider while authoring, not to be part of the published page)</p>
-  <ul>
-    <li>Describe what elements are required for a page to be Canada.ca</li>
-    <li>Describe in the overarching intention of these elements</li>
-    <li>Link to or provide the actual code behind each of the elements</li>
-  </ul>
-</details>
-
 <h2>On this page</h2>
-<li><a href="#look">Visual identity</a></li>
-<li><a href="#header-footer">Header and footer</a>
-<li><a href="#mandatory">Mandatory templates</a></li>
-
+</ul>
+  <li><a href="#look">Typography and overall look</a></li>
+  <li><a href="#header-footer">Header and footer</a>
+  <li><a href="#mandatory">Mandatory templates</a></li>
 </ul>
 </section>
+<h2 id="look">Typography and overall look</h2>
 
+<p>Fonts should be easily readable across devices. We use a combination of Lato for headings, and Noto sans for body text.</p>
+<p>Font sizes vary depending on the type of page. On navigation pages (like theme or topic pages), fonts are slightly smaller to allow for more keywords to be visible while scanning. On content pages, fonts appear slightly larger to facilitate longer-form reading.</p>
 
-<h2 id="look">Visual identity</h2>
-      <p>Canada.ca was designed to be:</p>
-      <ul>
-        <li>modern</li>
-        <li>open</li>
-        <li>helpful</li>
-        <li>credible</li>
-      </ul>
-        <p>Its visual identity uses elements of the
-          <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/federal-identity-program/manual.html">Federal Identity Program</a> to present the familiar, trusted brand of the Government of Canada.</p>
+<h3>Navigation pages</h3>
+<p>Include theme pages, topic pages, institutional profiles, etc. (should be able to point to something).</p>
+<ul>
+  <li>H1: Lato, 38px, with a red rule below</li>
+  <li>H2: Lato, 36px</li>
+  <li>H3: Lato, 24px</li>
+  <li>H4: Lato, 22px</li>
+  <li>H5: Lato, 20px</li>
+  <li>H6: Lato, 19px</li>
+  <li>Body: Noto sans, 19px</li>
+</ul>
+<p>For content pages, fonts and sizes are the same except:</p>
+<ul>
+  <li>Body - Noto sans, 22px</li>
+</ul>
 
-        <p>It uses typography, colour, layout, and imagery to help unify the presentation of content across Government of Canada digital content.</p>
+<p>Font sizes are smaller on mobile screens:</p>
+<ul>
+  <li>H2 - Lato, 26px</li>
+  <li>H3 - Lato, 24px</li>
+  <li>Body - Noto sans, 22px</li>
+</ul>
 
-          <p>This design is under continual review. Research and testing will lead to iterative improvements. </p>
+<p>On content pages, lines are constrained to 65 characters. This ensures that no lines extend beyond a comfortable reading level. </p>
+<p>Links are underlined, using an underline style that skips descenders (which can harm readability). While links can be readily understood by people without links, they remain the clearest signal that test is a link.</p>
 
-      <h3 id="fonts">Typography</h3>
-      <p>Fonts and their sizes should be easily readable. We use a combination of Lato for headings, and Noto sans for body text.</p>
-      <p>Font sizes vary depending on whether they're used on navigation pages (like theme or topic pages), or content pages (where fonts appear slightly larger to facilitate longer-form reading).</p>
-      <p>For navigation pages, fonts and sizes are:</p>
-      <ul>
-        <li>H2 - Lato, 26px</li>
-        <li>H3 - Lato, 23px</li>
-        <li>Body - Noto sans, 19px</li>
-      </ul>
-      <p>For content pages, fonts and sizes are:</p>
-      <ul>
-        <li>H2 - Lato, 26px</li>
-        <li>H3 - Lato, 24px</li>
-        <li>Body - Noto sans, 22px</li>
-      </ul>
+<h3 id="colours">Colours</h3>
 
-      <p>Font sizes are smaller on mobile screens:</p>
-      <ul>
-        <li>H2 - Lato, 26px</li>
-        <li>H3 - Lato, 24px</li>
-        <li>Body - Noto sans, 22px</li>
-      </ul>
+<p>This is where the colour palette is described. To show:</p>
+<ul>
+  <li>colour palettes, including swatches and values - see gov.uk example</li>
+  <li>specify colours for: text, links, backgrounds</li>
+  <li>anything else?</li>
+   </ul>
 
-      <p>On content pages, lines are constrained to 65 characters. This ensures that no lines extend beyond a comfortable reading level. </p>
-      <p>Links are underlined, using an underline style that skips descenders (which can harm readability). While links can be readily understood by people without links, they remain the clearest signal that test is a link.</p>
+   <p>Mention following do's and don't's:</p>
+   <ul>
+     <li>use white/light backgrounds; avoid dark backgrounds</li>
+     <li>ensure high contrast (AAA level)</li>
+     <li></li>
 
-      <h3 id="colours">Colours</h3>
+   </ul>
 
-      <p>This is where the colour palette is described. To show:</p>
-      <ul>
-        <li>colour palettes, including swatches and values - see gov.uk example</li>
-        <li>specify colours for: text, links, backgrounds</li>
-        <li>anything else?</li>
-         </ul>
+<h3 id="layouts">Layouts</h3>
 
-         <p>Mention following do's and don't's:</p>
-         <ul>
-           <li>use white/light backgrounds; avoid dark backgrounds</li>
-           <li>ensure high contrast (AAA level)</li>
-           <li></li>
+<p>This is where the grid system is described. Things to mention:</p>
 
-         </ul>
+<ul>
+ <li>underlying grid is 12 col - but limit UIs to 3 or fewer columns to minimize complexity for people trying to use the pages</li>
+  <li>for single column pages, enable recommended line length - it's more readable than full width line length</li>
+  <li></li>
+  </ul>
+<h3 id="images">Imagery</h3>
 
-      <h3 id="layouts">Layouts</h3>
+<p>This is where use of imagery is described. Already have something in common design patterns on images?</p>
 
-      <p>This is where the grid system is described. Things to mention:</p>
-
-      <ul>
-       <li>underlying grid is 12 col - but limit UIs to 3 or fewer columns to minimize complexity for people trying to use the pages</li>
-        <li>for single column pages, enable recommended line length - it's more readable than full width line length</li>
-        <li></li>
-        </ul>
-      <h3 id="images">Imagery</h3>
-
-      <p>This is where use of imagery is described. Already have something in common design patterns on images?</p>
 
 <h2 id="header-footer">Header and footer</h2>
+<p>Each page shares a common header and footer. That is, the top and bottom parts of a page should look the same</p>
 
 <h3 id="toc1">Global header navigation</h3>
 
