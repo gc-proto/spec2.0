@@ -322,7 +322,7 @@
 <div><div class="mwsgeneric-base-html parbase section">
 <p class="gc-byline"><b>From <a href="/en/treasury-board-secretariat.html">Treasury Board of Canada Secretariat</a></b></p>
 
-<p>Canada.ca pages must be easily identifiable as part of Canada.ca. Each page must convey the overall brand and feel of Canada.ca, whatever the content. This is achieved through a common header and footer, typography, and the use of colour and imagery. </p>
+<p>Canada.ca pages must be easily identifiable as part of Canada.ca. Each page must convey the overall brand and feel of Canada.ca, and provide a consistent experience for site visitors. </p>
 
 <!-- <nav role="navigation" class="mrgn-bttm-lg">
 <h2 class="wb-inv">Document navigation</h2>
@@ -339,14 +339,14 @@
   <li><a href="#typog">Typography</a></li>
   <li><a href="#colours">Colours</a></li>
   <li><a href="#header-footer">Header and footer</a>
-  <li><a href="#mandatory">Mandatory templates</a></li>
+  <li><a href="#mandatory">Mandatory page templates</a></li>
 </ul>
 </section>
-<h2 id="typog">Typography and overall look</h2>
+<h2 id="typog">Typography</h2>
 
 <p>Fonts should be easily readable across devices. We use a combination of Lato for headings, and Noto sans for body text.</p>
 
-<h3>Desktop and tablet</h3>
+<h3>Desktop and tablet default font specification</h3>
 <ul>
   <li>H1: Lato, 38px, bold, with a red rule below</li>
   <li>H2: Lato, 36px, bold</li>
@@ -356,7 +356,7 @@
   <li>H6: Lato, 19px, plain text</li>
   <li>Body: Noto sans, 20px, plain text</li>
 </ul>
-<h3>Smaller devices</h3>
+<h3>Smaller device default font specification</h3>
 <ul>
   <li>H1: Lato, 34px, bold, with a red rule below</li>
   <li>H2: Lato, 32px, bold</li>
@@ -369,10 +369,10 @@
 
 <h3>Line length</h3>
 <p>Text lines are constrained to 65 characters in length. This ensures that no lines extend beyond a comfortable reading level.</p>
-<p>This line length restriction doesn't mean that pages can be only as wide as 65 characters, only that lines of text cannot run longer. </p>
+<p>The line length restriction doesn't mean that pages layouts can be only as wide as 65 characters, only that lines of text cannot run longer. </p>
 
 <h3>Links</h3>
-<p>Links are underlined, using an underline style that skips descenders (which can harm readability).</p>
+<p>Links are underlined, using an underline style that skips descenders.</p>
 
 <h2 id="colours">Colours</h2>
 
@@ -383,7 +383,7 @@ When other background colours are used, ensure sufficient contrast with text to 
 </p>
 
 <h3>Text</h3>
-<p>The default colour for text elements on Canada.ca is black (#000).</p>
+<p>The default colour for text on Canada.ca is black (#000).</p>
 <p>The following colours are always used for links:
 <ul>
   <li>default link: #2b4380</li>
@@ -393,7 +393,7 @@ When other background colours are used, ensure sufficient contrast with text to 
 </p>
 
 <h3>Additional colours</h3>
-<p>Only use additional colours for accents and supporting material:</p>
+<p>Only use additional colours for accents:</p>
 <ul>
   <li>main accent colour: #26374A</li>
   <li>main call to action button: #318000</li>
@@ -404,36 +404,32 @@ When other background colours are used, ensure sufficient contrast with text to 
 <p>Alert and information messages have additional colours. These are described in the relevant <a href="??">pattern descriptions</a>. </p>
 
 <h2 id="layouts">Layouts</h2>
-<p>Layouts vary depending on the size of the viewport (the window or device being used to view the site).</p>
+<p>The underlying grid system for Canada.ca allows for responsive layouts at various screen sizes. This allows for flexible layouts while maintaining consistent placement of elements. </p>
 
 <p>The default maximum content width is 1140 pixels. In some rare cases, a layout may need to be wider. For example, some very large data tables may be too wide to fit in this space. This will require viewers to scroll right to see the entire layout. </p>
 
-<h3>Columns</h3>
-
-<p>The underlying grid system for Canada.ca is 12 columns to allow for responsive layouts at various screen sizes. This allows for flexible layouts while maintaining consistent placement of elements. </p>
-<p>Small screens should typically use a single-column layout.</p>
+<p>On smaller screens layouts will typically display as a single-column.</p>
 
 <h2 id="header-footer">Header and footer</h2>
-<p>Each page uses a standard header and footer, to establish a consistent appearance and navigation controls.</p>
+<p>Each page uses a standard header and footer, to present a consistent appearance and navigation controls.</p>
 
-<p>Every page must use the standard template, except in these situations:</p>
+<p>Every page must use the standard header and footer, except in these situations:</p>
 <ul>
   <li><b>Transactional scenarios</b>: pages where people are engaged in a transactional process. That is, where allowing them to navigate away from the current page would interrupt the intended flow and result in errors, loss of data or accidental termination of the session.
 </li>
 <li><b>Campaigns</b>: time-limited, promotional pages that respond to the Government of Canada’s desire to communicate, educate, influence, market, raise awareness and call to action, whether initiated at the institutional level or centrally requested.
 </li></ul>
 <p>How the header and footer elements may vary in these situations is shown in the tables below.</p>
-<p>For details on each of these patterns, see common design patterns.</p>
 
 <h3>Global header</h3>
 
-<img class="img-responsive" src="../images/header-en.png" alt="Elements of the Canada.ca header. See description for details">
+<img class="img-responsive" src="../images/header-en.png" alt="Elements of the Canada.ca header. See table for details">
 
 <table class="table table-bordered table-condensed">
 
 <caption>
 
-<b>Table 1. Global header requirements</b>
+Table 1. Global header requirements
 
 </caption>
 
@@ -465,7 +461,7 @@ When other background colours are used, ensure sufficient contrast with text to 
 
     <td>Mandatory</td>
     <td>Mandatory</td>
-    <td>Mandatory <a class="footnote" href="#fn1" id="fn1base">1</a></td>
+    <td>Mandatory <a class="footnote" href="#fn1" id="fn1base"><sup>1</sup></a></td>
 
   </tr>
   <tr>
@@ -504,7 +500,7 @@ When other background colours are used, ensure sufficient contrast with text to 
   </tr>
 </table>
 
-<p><a class="anchor" id="fn1" href="fn1base">1</a> Transactional web applications must be developed so that people can toggle between official languages on any given page or screen. This may not be the case with some legacy web applications. Such applications should be replaced to allow this functionality. Until they are replaced, the language toggle can be omitted if its use would result in a loss of data.
+<p><a class="anchor" id="fn1" href="#fn1base">1</a> Transactional web applications must be developed so that people can toggle between official languages on any given page or screen. Some legacy web applications may not have been designed this way. Such applications should be updated to allow this functionality. Until they are replaced or updated, the language toggle can be omitted if its use would result in a loss of data.
 </p>
 
 <h3>Global footer</h3>
@@ -515,7 +511,7 @@ When other background colours are used, ensure sufficient contrast with text to 
 
 <caption>
 
-<b>Table 2. Global footer requirements</b>
+Table 2. Global footer requirements
 
 </caption>
 
@@ -552,11 +548,11 @@ When other background colours are used, ensure sufficient contrast with text to 
   </tr>
   <tr>
 
-    <td>Date modified</td>
+    <td><a href="http://canada-ca.github.io/design-system-systeme-conception/common-design-patterns/date-modified.html">Date modified</a></td>
 
     <td>Mandatory</td>
     <td>Mandatory</td>
-    <td>Mandatory, but can be a version number when used for an application</td>
+    <td>Mandatory, but can instead be a version number when used for an application</td>
 
   </tr>
   <tr>
@@ -587,49 +583,25 @@ When other background colours are used, ensure sufficient contrast with text to 
   </tr>
 </table>
 
-
 <h2 id="mandatory">Mandatory page templates</h2>
 
 <p>Mandatory page templates are used for specific page types on Canada.ca. They are used where their consistency helps people find and accomplish tasks. </p>
 
 
-  <h3 id="theme">Theme and topic pages</h3>
-<p>Themes are the main categories into which all Canada.ca content is organized. Topics are the main subject areas within each theme. Each uses a common page design to make it easier for people to navigate from the top level of Canada.ca to their destination.</p>
+  <h3 id="theme">Theme and topic page templates</h3>
+<p>Themes are the main categories into which Canada.ca content is organized. Topics are the main subject areas within each theme. Each uses a common page design to make it easier for people to navigate from the top level of Canada.ca to their destination.</p>
 
- <table class="table table-bordered table-condensed">
+<h4>Theme page</h4>
 
-<thead>
+    <p>The top-level page for each Canada.ca theme and main audience. Only to be used by theme lead institutions for the themes they manage.</p>
+    <ul>
+    <li><a href="https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/theme-pages.html">Template specification: Theme page</a></li>
+    <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/theme-en.html">Working example: Theme page</a></li>
+  </ul>
 
-  <tr class="active">
+  <h4>Government-wide audience page</h4>
 
-    <th scope="col">Template name</th>
-
-    <th scope="col">Purpose</th>
-
-    <th scope="col">Usage</th>
-
-    <th scope="col">Working example</th>
-
-  </tr>
-
-</thead>
-
-<tbody>
-
-
-  <tr>
-
-    <td><a href="https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/theme-pages.html">Theme page</a></td>
-    <td>The top-level page for each Canada.ca theme and main audience</td>
-    <td>Only to be used by theme lead institutions for the themes they manage</td>
-    <td><a href="http://wet-boew.github.io/themes-dist/GCWeb/theme-en.html">Working example: theme page</a></td>
-
-  </tr>
-  <tr>
-
-   <td><a href="https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/audience-pages.html">Government-wide audience page</a></td>
-
-   <td>Used for the top-level page for the government-wide audiences:
+   <p>Used for the top-level page for the government-wide audiences:
          <ul>
 
            <li>Indigenous peoples</li>
@@ -640,33 +612,23 @@ When other background colours are used, ensure sufficient contrast with text to 
 
          </ul>
 
-       </li>
+       </p>
 
-     </ul></td>
+   <p>Only to be used by the institutions managing the government-wide audiences.</p>
+<ul>
+<li><a href="https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/audience-pages.html">Template specification Government-wide audience page</a></li>
+   <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/gc-audience-en.html">Working example: Government of Canada-wide audience page</a></li>
+</ul>
 
-   <td>Only to be used by the institutions managing the government-wide audiences</td>
+<h4>Topic page</h4>
 
+    <p>Used for the main Canada.ca topics to provide access to sub-topics and destination content.</p>
 
-   <td><a href="http://wet-boew.github.io/themes-dist/GCWeb/gc-audience-en.html">Working example: GC-wide audience page</a></td>
-
-  </tr>
-  <tr>
-
-    <td><a href="https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/topic-pages.html">Topic page</a></td>
-
-    <td>Used for the main Canada.ca topics to provide access to sub-topics and destination content</td>
-
-    <td>Must be used for each main topic page on Canada.ca. (Optional for use for lower-level topics)</td>
-
-
-    <td><a href="http://wet-boew.github.io/themes-dist/GCWeb/topic-en.html">Working example: topic page</a></td>
-
-  </tr>
-
-
-</tbody>
-
-</table>
+    <p>Must be used for each main topic page on Canada.ca. (Optional for use for lower-level topics)</p>
+<ul>
+<li><a href="https://canada-ca.github.io/design-system-systeme-conception/mandatory-templates/topic-pages.html">Topic page</a></li>
+    <li><a href="http://wet-boew.github.io/themes-dist/GCWeb/topic-en.html">Working example: topic page</a></li>
+</ul>
 
   <h3 id="institutional">Institutional templates</h3>
 <p>These pages provide access to key information about each institution.</p>
