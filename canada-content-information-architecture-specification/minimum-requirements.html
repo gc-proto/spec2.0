@@ -406,33 +406,263 @@ When other background colours are used, ensure sufficient contrast with text to 
 <h2 id="layouts">Layouts</h2>
 <p>Layouts vary depending on the size of the viewport (the window or device being used to view the site).</p>
 
-<p>The default maximum content width is 1140 pixels. In some rare cases, a layout may need to be wider. For example, some very large data tables may be too wide to fit in this space.</p>
+<p>The default maximum content width is 1140 pixels. In some rare cases, a layout may need to be wider. For example, some very large data tables may be too wide to fit in this space. This will require viewers to scroll right to see the entire layout. </p>
 
 <h3>Columns</h3>
-<ul>
-<li>The underlying grid system for Canada.ca is 12 columns to allow for responsive layouts at various screen sizes. </li>
-<li>However, limit large screen views to 3 or fewer columns to minimize visual complexity</li>
-<li>For small screens, always use a single column layout </li>
-<li>For single column layouts at all screen sizes, lines are constrained to 65 characters by default. This ensures that no lines extend beyond a comfortable reading level.</li>
-</ul>
 
+<p>The underlying grid system for Canada.ca is 12 columns to allow for responsive layouts at various screen sizes. This allows for flexible layouts while maintaining consistent placement of elements. </p>
+<p>Small screens should typically use a single-column layout.</p>
 
 <h2 id="header-footer">Header and footer</h2>
-<p>Each page uses a standard header and footer, to establish a consistent appearance and provide consistent navigation controls.</p>
+<p>Each page uses a standard header and footer, to establish a consistent appearance and navigation controls.</p>
 
-<img src="../images/header-en.png" alt="Elements of the Canada.ca header. See description for details">
-
-
-
-<p>The standard template can be modified in these specific situations:</p>
+<p>Every page must use the standard template, except in these situations:</p>
 <ul>
   <li><b>Transactional scenarios</b>: pages where people are engaged in a transactional process. That is, where allowing them to navigate away from the current page would interrupt the intended flow and result in errors, loss of data or accidental termination of the session.
 </li>
 <li><b>Campaigns</b>: time-limited, promotional pages that respond to the Government of Canada’s desire to communicate, educate, influence, market, raise awareness and call to action, whether initiated at the institutional level or centrally requested.
 </li></ul>
-
 <p>How the header and footer elements may vary in these situations is shown in the tables below.</p>
 <p>For details on each of these patterns, see common design patterns.</p>
+
+<h3>Global header</h3>
+
+<img class="img-responsive" src="../images/header-en.png" alt="Elements of the Canada.ca header. See description for details">
+
+<table class="table table-bordered table-condensed">
+
+<caption>
+
+<b>Table 1. Global header requirements</b>
+
+</caption>
+
+<thead>
+
+  <tr class="active">
+
+    <th scope="col">Header element</th>
+    <th scope="col">Standard page</th>
+    <th scope="col">Campaign page</th>
+    <th scope="col">Transactional page</th>
+
+  </tr>
+</thead>
+
+<tbody>
+
+  <tr>
+
+    <td>Government of Canada signature (linked to Canada.ca home)</td>
+    <td>Mandatory</td>
+    <td>Mandatory</td>
+    <td>Mandatory, but link to Canada.ca home page is optional</td>
+
+  </tr>
+  <tr>
+
+    <td>Language toggle</td>
+
+    <td>Mandatory</td>
+    <td>Mandatory</td>
+    <td>Mandatory <a class="footnote" href="#fn1" id="fn1base">1</a></td>
+
+  </tr>
+  <tr>
+
+    <td>Site-wide search</td>
+
+    <td>Mandatory</td>
+    <td>Optional</td>
+    <td>Optional</td>
+
+  </tr>
+  <tr>
+
+    <td>Global menu</td>
+    <td>Mandatory</td>
+    <td>Optional</td>
+    <td>Optional</td>
+
+  </tr>
+  <tr>
+
+    <td>Horizontal rule (MAY SKIP IF IN PATTERN)</td>
+    <td>Mandatory</td>
+    <td>Mandatory if global menu is used</td>
+    <td>Mandatory if global menu is used</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Background colour (white)</td>
+    <td>Mandatory</td>
+    <td>Optional</td>
+    <td>Mandatory</td>
+
+  </tr>
+</table>
+
+<p><a class="anchor" id="fn1" href="fn1base">1</a> Transactional web applications must be developed so that people can toggle between official languages on any given page or screen. This may not be the case with some legacy web applications. Such applications should be replaced to allow this functionality. Until they are replaced, the language toggle can be omitted if its use would result in a loss of data.
+</p>
+
+<h3>Global footer</h3>
+
+<img class="img-responsive" src="../images/footer-en.png" alt="Elements of the Canada.ca footer. See description for details">
+
+<table class="table table-bordered table-condensed">
+
+<caption>
+
+<b>Table 1. Global header requirements</b>
+
+</caption>
+
+<thead>
+
+  <tr class="active">
+
+    <th scope="col">Header element</th>
+    <th scope="col">Standard page</th>
+    <th scope="col">Campaign page</th>
+    <th scope="col">Transactional page</th>
+
+  </tr>
+</thead>
+
+<tbody>
+
+  <tr>
+
+    <td>Government of Canada signature (linked to Canada.ca home)</td>
+    <td>Mandatory</td>
+    <td>Mandatory</td>
+    <td>Mandatory, but link to Canada.ca home page is optional</td>
+
+  </tr>
+  <tr>
+
+    <td>Language toggle</td>
+
+    <td>Mandatory</td>
+    <td>Mandatory</td>
+    <td>Mandatory <a class="footnote" href="#fn1" id="fn1base">1</a></td>
+
+  </tr>
+  <tr>
+
+    <td>Site-wide search</td>
+
+    <td>Mandatory</td>
+    <td>Optional</td>
+    <td>Optional</td>
+
+  </tr>
+  <tr>
+
+    <td>Global menu</td>
+    <td>Mandatory</td>
+    <td>Optional</td>
+    <td>Optional</td>
+
+  </tr>
+  <tr>
+
+    <td>Horizontal rule (MAY SKIP IF IN PATTERN)</td>
+    <td>Mandatory</td>
+    <td>Mandatory if global menu is used</td>
+    <td>Mandatory if global menu is used</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Background colour (white)</td>
+    <td>Mandatory</td>
+    <td>Optional</td>
+    <td>Mandatory</td>
+
+  </tr>
+</table>
+
+<p><a class="anchor" id="fn1" href="fn1base">1</a> Transactional web applications must be developed so that people can toggle between official languages on any given page or screen. This may not be the case with some legacy web applications. Such applications should be replaced to allow this functionality. Until they are replaced, the language toggle can be omitted if its use would result in a loss of data.
+</p>
+
+
+
+  <table>
+  <tr>
+
+    <td>“Report a problem on this page” button/form</td>
+
+    <td>Mandatory</td>
+
+    <td></td>
+
+  </tr>
+
+  <tr>
+
+    <td>“Share this page” button</td>
+
+    <td>Optional</td>
+
+    <td>On pages within a transaction, the share button must only share a link to the <strong>first</strong> page of the transaction/application, to act as an entry point for recipients</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Global footer navigation menu</td>
+
+    <td>Mandatory</td>
+
+    <td>Retain, but only provide links to the following:
+
+      <ul>
+
+        <li>Contact us</li>
+
+        <li>Terms and conditions</li>
+
+        <li>Privacy</li>
+
+      </ul>
+
+      <p>Contextualize these links with appropriate information.</p>
+
+      <ul>
+
+        <li>When clicked, present the destinations for these links in an overlay, to avoid disrupting the flow of the transaction. Provide a clear path back to the active transactional process</li>
+
+      </ul></td>
+
+  </tr>
+
+  <tr>
+
+    <td>Canada Wordmark</td>
+
+    <td>Mandatory</td>
+
+    <td></td>
+
+  </tr>
+
+  <tr>
+
+    <td>Top of page link (small screens only)</td>
+
+    <td>Mandatory</td>
+
+    <td></td>
+
+  </tr>
+
+</tbody>
+
+</table>
 
 
 <h3 id="toc1">Global header navigation</h3>
